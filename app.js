@@ -135,7 +135,7 @@ app.post("/del",function(req,res){
   let delId = req.body.checkItem;
   const delListname = req.body.listName;
 if(delListname === "Today"){
-  List.findByIdAndDelete(delId,(err)=>{
+  Item.findByIdAndDelete(delId,(err)=>{
 
     if(!err){
     console.log("Deleted");
