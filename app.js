@@ -29,7 +29,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 const item1 = new Item({
-  name:"Buy Food"
+  name:"E Food"
 })
 
 const item2 =new Item({
